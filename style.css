@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    border: 10px;
+    background: url(img/fondo.jpg) center center fixed;
+    background-size: cover;
+    color:black;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+main{
+    width: 90%;
+    margin: auto;
+    max-width: 800px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.logotipo{
+    padding: 10px;
+    border: 5px solid white;
+    color: white;
+
+}
+.logotipo .subtitulo{
+
+    text-align: center;
+    color:white ;
+    background: #eeb76b;
+    padding: 15px 15px 20px 20px;
+    transition: .5s ease all;
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+.logotipo:hover .subtitulo{
+    background: #a3d2ca;
+}
+.texto-animado{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.texto-animado > div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: .3s ease all;
+}
+.texto-animado >div.animacion{
+    transform: translateY(-100px);
+
+}
+.texto-animado >div span{
+    font-size: 100px;
+    font-weight: normal;
+    line-height: 100px;
+}
+.texto-animado .segunda-linea{
+    position: absolute;
+    top: 100px;
+}
